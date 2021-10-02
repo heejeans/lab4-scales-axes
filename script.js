@@ -67,6 +67,9 @@ d3.csv('wealth-health-2014.csv', d3.autoType).then(data=>{
         else if (d.Population < 10000000){
             return 5;
         }
+        else if (d.Population > 1000000000){
+            return 23;
+        }
         else{
             return aScale(d.Population);
         }
